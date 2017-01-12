@@ -66,7 +66,7 @@
 	exports.default = bar;
 	function bar() {
 	  //
-	  alert("hello world");
+	  alert("hello world111");
 	}
 
 /***/ }
