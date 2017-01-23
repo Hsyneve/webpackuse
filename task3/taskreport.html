@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    li>span
+    {
+    	display: inline-block;
+    }
+    	.tit
+    	{
+    		width: 100px;
+    	}
+    	.time
+    	{
+    		margin-left: 20px;
+    		width: 200px;
+    		
+    	}
+    	a{
+    		display: inline-block;
+    		width: 40px;
+    		text-decoration: none;
+    		text-align: center;
+    		border:1px solid #ccc;
+    		color:#000;
+
+    	}
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="newTask
+">
+            <input type="text" v-model="newTodo" v-on:keypress.enter="addlist">
+        </div>
+        <ol>
+            <li v-for="todo in todolist">
+                <input type="checkbox" v-model="todo.done"> <span class="tit"> {{todo.title }}</span>
+                <span v-if="todo.done">已完成</span>
+                <span v-else="todo.done">未完成</span><span class="time"> {{todo.createdAt }}</span><a href="javascript:void(0)" v-on:click="deleteitem(todo)">删除</a>
+            </li>
+        </ol>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
