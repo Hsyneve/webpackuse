@@ -44,30 +44,13 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-
-	var _bar = __webpack_require__(1);
-
-	var _bar2 = _interopRequireDefault(_bar);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	(0, _bar2.default)();
+	eval("'use strict';\n\nvar _bar = __webpack_require__(1);\n\nvar _bar2 = _interopRequireDefault(_bar);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _bar2.default)();//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hcHAuanM/ZDhlZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBOzs7Ozs7QUFFQSIsImZpbGUiOiIwLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGJhciBmcm9tICcuL2Jhcic7XHJcblxyXG5iYXIoKTtcblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9hcHAuanMiXSwic291cmNlUm9vdCI6IiJ9");
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = bar;
-	function bar() {
-	  //
-	  alert("hello world111");
-	}
+	eval("\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = bar;\nfunction bar() {\n  //\n  alert(\"hello world\");\n}//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9iYXIuanM/MmZmNyJdLCJuYW1lcyI6WyJiYXIiLCJhbGVydCJdLCJtYXBwaW5ncyI6Ijs7Ozs7a0JBQXdCQSxHO0FBQVQsU0FBU0EsR0FBVCxHQUFlO0FBQzVCO0FBQ0FDLFFBQU0sYUFBTjtBQUNEIiwiZmlsZSI6IjEuanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBiYXIoKSB7XHJcbiAgLy9cclxuICBhbGVydChcImhlbGxvIHdvcmxkXCIpO1xyXG59XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIC4vYmFyLmpzIl0sInNvdXJjZVJvb3QiOiIifQ==");
 
 /***/ }
 /******/ ]);

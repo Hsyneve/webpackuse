@@ -1,0 +1,50 @@
+  li>span {
+        display: inline-block;
+    }
+    
+    .tit {
+        width: 90px;
+    }
+    
+    li {
+        margin-top: 5px;
+    }
+    
+    .time {
+        margin-left: 20px;
+        width: 200px;
+    }
+    
+    a {
+        display: inline-block;
+        width: 40px;
+        border-radius: 3px;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid #ccc;
+        color: #000;
+        font-size: 14px;
+        box-shadow: 3px 3px 3px #ccc;
+    }
+    .signUp,.login
+    {
+        width:260px;
+        height: 120px;
+        position: fixed;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border:1px solid #ccc;
+         text-align: center;
+         padding-top:32px;
+         box-shadow: 0px 0px 8px #ccc;
+    }
+
+    .formActions input
+    {
+        margin:20px auto;
+    }
+    .formRow
+    {
+        margin-top: 10px;
+    }

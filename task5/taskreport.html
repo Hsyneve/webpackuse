@@ -56,7 +56,7 @@
             </div>
             <ol>
                 <li v-for="todo in todolist">
-                    <input type="checkbox" v-model="todo.done"> <span class="tit"> {{todo.title }}</span>
+                    <input type="checkbox" v-model="todo.done" v-on:change="savetodo"> <span class="tit"> {{todo.title }}</span>
                     <span v-if="todo.done">已完成</span>
                     <span v-else="todo.done">未完成</span><span class="time"> {{todo.createdAt }}</span><a href="javascript:void(0)" v-on:click="deleteitem(todo)">删除</a>
                 </li>
