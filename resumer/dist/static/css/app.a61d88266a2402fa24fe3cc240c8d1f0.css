@@ -515,6 +515,16 @@ template {
   background: #ffffff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
 }
+#topbar .actions[data-v-a0a88fb8] {
+    display: -ms-flexbox;
+    display: flex;
+}
+#topbar .actions .userActions[data-v-a0a88fb8] {
+      margin-right: 3em;
+}
+#topbar .actions .userActions .welcome[data-v-a0a88fb8] {
+        margin-right: .5em;
+}
 #topbar > .wrapper[data-v-a0a88fb8] {
     min-width: 1024px;
     max-width: 1440px;
@@ -534,7 +544,7 @@ template {
     font-size: 24px;
     color: #000000;
 }
-button[data-v-a0a88fb8] {
+.button[data-v-a0a88fb8] {
   width: 72px;
   height: 32px;
   border: none;
@@ -542,15 +552,59 @@ button[data-v-a0a88fb8] {
   font-size: 18px;
   background: #ddd;
   color: #222;
+  text-decoration: none;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  vertical-align: middle;
 }
-button[data-v-a0a88fb8]:hover {
+.button[data-v-a0a88fb8]:hover {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-button.primary[data-v-a0a88fb8] {
+.button.primary[data-v-a0a88fb8] {
     background: #02af5f;
     color: white;
 }
 
+.diawrapper[data-v-5083911a] {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.25);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.dialog[data-v-5083911a] {
+  background: white;
+  min-height: 4em;
+  min-width: 10em;
+}
+.dialog > header[data-v-5083911a] {
+    padding: 16px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+.dialog > main[data-v-5083911a] {
+    padding: 16px;
+}
+
+.actions
+  {
+text-align:center;
+}
+  
 #resumeEditor[data-v-53358100] {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
   display: -ms-flexbox;
@@ -673,4 +727,4 @@ a[data-v-524cd6bc] {
   color: #42b983;
 }
 
-/*# sourceMappingURL=app.2fe4ae37784ed287b9310983b04309dc.css.map*/
+/*# sourceMappingURL=app.a61d88266a2402fa24fe3cc240c8d1f0.css.map*/
