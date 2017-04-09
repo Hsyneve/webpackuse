@@ -1,13 +1,13 @@
 <template>
-
-   <div id="app" class=page>
+<div id="app">
+   <div  class=page>
     <header>
       <Topbar/>
    </header>
     <main>
      <ResumeEditor/>
      <ResumePreview/>
-    </main></div>
+    </main></div></div>
 </template>
 
 <script>
@@ -18,6 +18,8 @@ import Topbar from './components/Topbar'
  import ResumePreview from './components/ResumePreview'
 import icons from './assets/icons'
 import store from './store/index'
+import AV from './lib/leancloud'
+import getAVUser from './lib/getAVUser'
  export default {
   name: 'app',
 store,
@@ -25,6 +27,16 @@ store,
 ,
    created(){
    document.body.insertAdjacentHTML('afterbegin', icons) 
+
+      let state = localStorage.getItem('state')
+   if(state){
+ 
+       state = JSON.parse(state) 
+     }
+       this.$store.commit('initState', state)
+   
+    
+  
   }
 }
 

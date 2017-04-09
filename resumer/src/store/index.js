@@ -1,11 +1,15 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
-
+import objectPath from "object-path"
 Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
         
         selected: 'workHistory',
+           user: {
+     id: '',
+    username: ''
+   },
         resume: {
             config: [
                 { field: 'profile', icon: 'id' },
@@ -47,9 +51,21 @@ export default new Vuex.Store({
 
     },
     mutations: {
-      
+            setUser(state, payload){
+      Object.assign(state.user, payload)
 
+     },
+     removeUser(state){
+      state.user.id = null
+      },
+    initState(state, payload){
+        Object.assign(state, payload)
+    }  ,
+updateResume(state,{path,value}){
+  objectPath.set(state.resume, path, value)
+  localStorage.setItem('state', JSON.stringify(state))
+},
    switchTab (state, payload){
       state.selected = payload // 关于 payload 看这里 http://vuex.vuejs.org/zh-cn/mutations.html#提交载荷（payload）
-    }}
+   localStorage.setItem('state', JSON.stringify(state)) }}
 })
